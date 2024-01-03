@@ -21,6 +21,8 @@ Additionally, the dashboard features a reset option to clear filters. Below the 
 <img src="https://i.imgur.com/Qf5Qe2o.png" alt="Example Image" width="3000"/>
 
 ## <a name="code"></a>The Code
+<img src="https://i.imgur.com/29yBCAv.png" alt="Example Image" width="3000"/>
+
 Imports: The script starts by importing necessary libraries, including Dash components, Plotly, Pandas, Matplotlib, and modules related to MongoDB interaction.
 
 Data Manipulation / Model: It sets up a connection to a MongoDB database using credentials and animal_shelter.py. It reads data from the database into a Pandas DataFrame.
