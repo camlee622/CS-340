@@ -7,6 +7,7 @@
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [The Code](#code)
 - [FAQ](#faq)
 
 ## <a name="introduction"></a>Introduction
@@ -19,6 +20,24 @@ The data table includes filters for breed, age, and preferred sex to identify do
 Additionally, the dashboard features a reset option to clear filters. Below the data table, you'll find a real-time updating pie chart and map. The map displays the distribution of filtered dogs worldwide, pinpointing their locations and names.
 <img src="https://i.imgur.com/Qf5Qe2o.png" alt="Example Image" width="3000"/>
 
+## <a name="code"></a>The Code
+Imports: The script starts by importing necessary libraries, including Dash components, Plotly, Pandas, Matplotlib, and modules related to MongoDB interaction.
+
+Data Manipulation / Model: It sets up a connection to a MongoDB database using credentials and animal_shelter.py. It reads data from the database into a Pandas DataFrame.
+
+Dashboard Layout / View: The layout is created using Dash HTML components and includes a title, a radio button for filtering animal types, a DataTable for displaying data, and two visualization components: a pie chart and a map.
+
+Interaction Between Components / Controller: The script defines callback functions that handle interactions between different components. These interactions include updating the displayed data based on the selected filter, highlighting selected rows in the DataTable, updating styles, and generating visualizations based on the selected data.
+
+Filters: The radio button allows users to filter the displayed data based on animal rescue types such as water rescue, mountain rescue, disaster rescue, or to reset and show all animals.
+
+Highlighting: Selected rows in the DataTable are highlighted with a background color to provide a visual indication.
+
+Pie Chart: The pie chart is dynamically updated based on the selected data in the DataTable.
+
+Map: The map component displays a geochart with a marker at the location of the first animal in the selected data. It includes a tooltip and a popup with additional information about the animal.
+
+Overall, this script integrates data retrieval from MongoDB with a web-based dashboard that allows users to interactively explore and visualize information about animals in the shelter. The dashboard provides a user-friendly interface with filters, data tables, and visualizations to enhance the understanding of the shelter data.
 
 ## <a name="requirements"></a>Requirements
 - Jupyter Notebook - https://jupyter.org/install
