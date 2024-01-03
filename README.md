@@ -1,17 +1,42 @@
-# CS-340
-Client/Server Development
+Grazioso Salvare Interactive Dashboard
+Table of Contents
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One, which you used to connect the dashboard widgets to the database in Project Two. What were the advantages of working in this way? How else could you use this CRUD Python module in the future?
+    Introduction
+    Requirements
+    Installation
+    Configuration
+    Troubleshooting
+    Maintainers
+    FAQ
 
-I think there is a lot to making sure that programs are maintainable, readable, and adaptable.. For starters, maintaining proper code comments and indentation keeps code neat and orderly, and explains the purpose of each action in the code. When there's unexpected results, it's easier to read code that has comments that should mention what isn't working. I think in the case of Project One, it was nice having the CRUD module in a separate Python module because once that module was completed and correct, there was no need to view that module to complete tasks for the dashboard. This left the dashboard with less code and allowed me to focus more on what needed to be done for the Project Dashboard itself.
+Introduction
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso Salvare requested. How did your approach to this project differ from previous assignments in other courses? What techniques or strategies would you use in the future to create databases to meet other client requests?
+This project was created by Cameron Lee for CS-340 Client Server/Development at Southern New Hampshire University. The goal is to provide an interactive Jupyter Dashboard displaying information about dogs in a database for an international rescue-animal training company named Grazioso Salvare.
 
-I think approaching a problem in the CS field requires a lot of critical and out of the box thinking, typically. Because of the direct relationship that Computer Science has with commands -> results, I think it's best to take tasks one step at a time. When task A is complete (which requires X -> Y), move to task B. My approach to this project didn't really change from previous assignments in other courses. Having the rubric for the assignment and reading the directions step by step helps greatly. It's ordered in a way that helps making the assignment complete correctly much easier. I think I would use the techniques and strategies used in this project to meet other client requests, such as breaking the dashboard down step by step to get a clean final product.
+The data table includes filters for breed, age, and preferred sex to identify dogs suitable for various rescue situations, such as Water Rescue, Mountain/Wilderness Rescue, and Disaster Relief.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare, to do their work better?
+Additionally, the dashboard features a reset option to clear filters. Below the data table, you'll find a real-time updating pie chart and map. The map displays the distribution of filtered dogs worldwide, pinpointing their locations and names.
+FAQ
+Why MongoDB?
 
-I think that computer scientists work towards increasing the relationship between human beings and computers. There are so many tasks that are/can be completed using computers as a tool that I think computer scientists want to work towards that goal and make advancements for society as a whole. I think it matters a lot because the power of computers is practically limitless, so there are great things that we can solve as a species using computers as a tool. I think in regards to this project, doing this type of work would help companies reach their goals which (should) impact customers/users positively. Obviously there's a big discussion that can be had with ethics and it's relation to CS but in general, I think most projects related to comptuer science are positive impacts on society.
+MongoDB was chosen as the model component due to its simplicity and effectiveness. It allows for easy data storage and retrieval with a syntax similar to Python, seamlessly integrating with the CRUD module used in this project.
+How does the Dash framework work?
+
+The Dash framework was imported to design and provide controls for the project. It establishes a foundation for building intuitive and easy-to-navigate information displays.
+Requirements
+
+Ensure you have the following installed:
+
+    Jupyter Notebook
+    MongoDB
+    ProjectTwoDashboard.zip
+
+Installation
+
+    Download and install Jupyter Notebook and MongoDB.
+    Upload the contents of the ProjectTwoDashboard.zip file into Jupyter.
+    Run the notebook AFTER starting MongoDB in your command terminal.
+
+Roadblocks
+
+The development of this project faced challenges, including navigating the Jupyter UI, working with a virtual environment on an unfamiliar operating system, and organizing syntax. Despite these challenges, the final product is a testament to overcoming obstacles and delivering a successful project.
